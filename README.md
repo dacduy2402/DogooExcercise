@@ -84,7 +84,7 @@ OS:
 IDE:
 
 - [Visual Studio Code](https://visualstudio.microsoft.com/) phiên bản `1.59.1`
-- [IntelliJ IDEA Community Edition](https://www.jetbrains.com/idea/)
+- [IntelliJ IDEA Community Edition](https://www.jetbrains.com/idea/download)
 
 SDK:
 
@@ -93,9 +93,3 @@ SDK:
 - JDK phiên bản `11.0.12+8-LTS-237`
 - SpringBoot phiên bản `2.3.6`
 - [Swagger Editor](https://editor.swagger.io/) dùng cho phiên bản OpenAPI 3.0.1 
-
-
-
-
-
-
