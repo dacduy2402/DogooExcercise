@@ -1,6 +1,7 @@
 # Chương trình đào tạo Full-Stack WebApp căn bản - DOGOO-FS01
 
 ## Ngày 01
+
 ---
 
 ### Khung kiến thức cho lập trình Full-Stack
