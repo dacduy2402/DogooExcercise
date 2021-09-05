@@ -57,6 +57,8 @@ Các lệnh git cơ bản
 - `git push`
 - `git pull`
 - `git tag`
+- `git checkout`
+- `git merge`
 
 Gitflow [là gì](https://viblo.asia/p/co-ban-ve-gitflow-workflow-4dbZNn6yZYM)
 
