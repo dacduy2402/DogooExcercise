@@ -1,4 +1,4 @@
-# Chương trình đào tạo Full-Stack WebApp căn bản - DOGOO-FS01
+# Nội dung khoá học DOGOO-FS01
 
 > ## Ngày 01
 
@@ -246,5 +246,13 @@ Các link tham khảo
 - Flexbox Playground: https://the-echoplex.net/flexyboxes/
 - Interneting Is Hard: https://www.internetingishard.com/html-and-css/
 - Khoá học HTML/CSS cơ bản đến nâng cao của anh Tuấn (Evondev): https://kt.city/course/khoa-hoc-html-css-evondev
+
+> ## Ngày 03
+
+## Lập trình JavaScript cơ bản 01
+
+### Mục tiêu cần đạt được
+
+- 
 
 
