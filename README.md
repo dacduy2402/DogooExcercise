@@ -251,8 +251,46 @@ Các link tham khảo
 
 ## Lập trình JavaScript cơ bản 01
 
-### Mục tiêu cần đạt được
+### Nội dung trọng tâm
 
-- 
+- Công cụ phát triển, cách debug
+- Hiểu được nguyên lý hoạt động của JavaScript
+- Nắm được các toán tử cơ bản trong JavaScript
+- Các kiểu dữ liệu có trong JavaScript
+- Các bài toán xử lý Number, String, Array, Object.
+- Closure là gì? Và tại sao lại cần nó?
+- `this` trong JavaScript
+
+### Các link tham khảo
+
+- ebook: https://drive.google.com/file/d/17wuKxb9-dVURD5_mLZcRuJYL6Okf8pFc/view?usp=sharing
+- https://www.ezfrontend.com/blog/tong-hop-tai-lieu-hay-tu-easy-frontend
+- https://www.youtube.com/channel/UCG2ovypNCpVOTFeY1YCocmQ
+- https://www.youtube.com/c/evondev
+
+> ## Ngày 04
+
+## Lập trình JavaScript cơ bản 02
+
+### Nội dung trọng tâm
+
+- Lập trình hướng đối tượng trong JavaScript 
+- Lập trình bất đồng bộ trong JavaScript
+  - Phân biệt setTimeout() vs setInterval()
+  - Promise
+  - Async/Await
+- Cú pháp ES6
+- Làm việc với REST APIs
+- Tìm hiểu về làm việc với DOM
+
+### Các link tham khảo
+
+- Coding convention: https://github.com/airbnb/javascript
+
+- https://www.ezfrontend.com/blog/tong-hop-tai-lieu-hay-tu-easy-frontend
+- https://www.youtube.com/channel/UCG2ovypNCpVOTFeY1YCocmQ
+- https://www.youtube.com/c/evondev
+
+
 
 
