@@ -1,4 +1,4 @@
-# Chương trình đào tạo Full-Stack WebApp căn bản - DOGOO-FS01
+# Nội dung khoá học DOGOO-FS01
 
 > ## Ngày 01
 
@@ -246,5 +246,51 @@ Các link tham khảo
 - Flexbox Playground: https://the-echoplex.net/flexyboxes/
 - Interneting Is Hard: https://www.internetingishard.com/html-and-css/
 - Khoá học HTML/CSS cơ bản đến nâng cao của anh Tuấn (Evondev): https://kt.city/course/khoa-hoc-html-css-evondev
+
+> ## Ngày 03
+
+## Lập trình JavaScript cơ bản 01
+
+### Nội dung trọng tâm
+
+- Công cụ phát triển, cách debug
+- Hiểu được nguyên lý hoạt động của JavaScript
+- Nắm được các toán tử cơ bản trong JavaScript
+- Các kiểu dữ liệu có trong JavaScript
+- Các bài toán xử lý Number, String, Array, Object.
+- Closure là gì? Và tại sao lại cần nó?
+- `this` trong JavaScript
+
+### Các link tham khảo
+
+- ebook: https://drive.google.com/file/d/17wuKxb9-dVURD5_mLZcRuJYL6Okf8pFc/view?usp=sharing
+- https://www.ezfrontend.com/blog/tong-hop-tai-lieu-hay-tu-easy-frontend
+- https://www.youtube.com/channel/UCG2ovypNCpVOTFeY1YCocmQ
+- https://www.youtube.com/c/evondev
+
+> ## Ngày 04
+
+## Lập trình JavaScript cơ bản 02
+
+### Nội dung trọng tâm
+
+- Lập trình hướng đối tượng trong JavaScript 
+- Lập trình bất đồng bộ trong JavaScript
+  - Phân biệt setTimeout() vs setInterval()
+  - Promise
+  - Async/Await
+- Cú pháp ES6
+- Làm việc với REST APIs
+- Tìm hiểu về làm việc với DOM
+
+### Các link tham khảo
+
+- Coding convention: https://github.com/airbnb/javascript
+
+- https://www.ezfrontend.com/blog/tong-hop-tai-lieu-hay-tu-easy-frontend
+- https://www.youtube.com/channel/UCG2ovypNCpVOTFeY1YCocmQ
+- https://www.youtube.com/c/evondev
+
+
 
 
