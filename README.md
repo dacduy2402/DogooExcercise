@@ -291,6 +291,62 @@ Các link tham khảo
 - https://www.youtube.com/channel/UCG2ovypNCpVOTFeY1YCocmQ
 - https://www.youtube.com/c/evondev
 
+> ## Ngày 5
+
+Bài tập:
+
+1. Tạo một máy tính cá nhân có thể thực hiện được các phép tính:
+    - Cộng/Trừ/Nhân/Chia
+    - Tính bình phương
+    - Tính trị tuyệt đối của một số
+    - Tính căn bậc 2
+
+1. Yêu cầu là viết một hàm trả về giá trị của một số fibonacci cụ thể. Ví dụ, mình truyền vào là thứ tự của số đó, trả về giá trị của nó, fibonacci(4) trả về 3, fibonacci(6) trả về 8.
+
+1. Viết một hàm để kiểm tra một năm bất kỳ có phải là năm nhuận hay không?
+
+1. Viết một hàm nhận vào 1 mảng và một số. Bạn cần phải tìm và xóa đối số đó khỏi mảng
+
+    ```
+    Ví dụ: removeFromArray([1, 2, 3, 4], 3); // Xóa phần tử 3 và trả về mảng mới
+    [1,2,4]
+
+    ```
+
+1. Viết một hàm đảo ngược chuỗi số
+
+    ```
+    Ví dụ: cho dãy số 1234 sau khi đảo ngược thành 4321
+    ```
+
+1. Cho đoạn HTML sau
+
+    ```
+      <!DOCTYPE html>
+      <html>
+        <head>
+          <meta charset=utf-8 />
+          <title>JS DOM paragraph style</title>
+        </head> 
+        <body>
+          <p id ='text'>Dogoo FS01 - Exercises</p> 
+          <div>
+            <button id="jsstyle" onclick="js_style()">Style</button>
+          </div>
+        </body>
+      </html>
+    ```
+
+    Hãy viết hàm JavaScript để thay đổi stylr của đoạn text được hiển thị trong thẻ `p`
+
+1. Viết hàm JavaScript xoá toàn bộ phần tử của mảng nếu phần tử đó không là duy nhất
+
+    ```
+    input: 1,2,3,3,4,5 
+    outout: 1,2,4,5
+    ```
+
+
 
 
 
