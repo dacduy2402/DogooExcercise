@@ -193,4 +193,208 @@ input[type="text"] {
 }
 ```
 
+> ## Bài tập tuần 01
+
+### Bài 1:  Tạo một máy tính cá nhân có thể thực hiện được các phép tính:
+
+- Cộng
+- Trừ
+- Nhân
+- Chia
+- Bình phương
+- Trị tuyệt đối
+- Căn bậc 2
+
+```
+
+let Calculator = function () {}
+
+Calculator.prototype.add = function (a, b) {
+    return a + b;
+}
+
+Calculator.prototype.subtract = function (a, b) {
+    return a - b;
+}
+
+Calculator.prototype.multiply = function (a, b) {
+    return a * b;
+}
+
+Calculator.prototype.divide = function (a, b) {
+  if (b === 0) {
+    return 'Can not divide for Zero';
+  }
+
+  return a/b;
+}
+
+Calculator.prototype.power = (a) => {
+  return a * a;
+}
+
+
+Calculator.prototype.abs = (a) => {
+  if (a >= 0) {
+    return a
+  } else {
+    return -1 * a;
+  }
+}
+
+Calculator.prototype.sqrt = (a) => {
+  if (a < 0) {
+    return 'Can not calculator';
+  } else {
+    return Math.sqrt(a);
+  }
+}
+
+
+```
+
+Kiểm tra kết quả
+
+```
+let cal = new Calculator();
+
+console.log("Sum: 1 + 2 = " + cal.add(1,2));
+console.log("Subtract: 1 - 2 = " + cal.add(1,2));
+console.log("Divide: 1/0 = " + cal.divide(1, 0));
+console.log("Divide: 1/2 = " + cal.divide(1, 2));
+console.log("Multiply: 3 * 2 = " + cal.multiply(3, 2));
+console.log("Power of 3  = " + cal.power(3));
+console.log("ABS of -3  = " + cal.abs(-3));
+console.log("ABS of 3  = " + cal.abs(3));
+console.log("Square root of 3  = " + cal.sqrt(3));
+console.log("Square root of 4 = " + cal.sqrt(4));
+
+```
+
+### Bài 2: Yêu cầu là viết một hàm trả về giá trị của một số fibonacci cụ thể. Ví dụ, mình truyền vào là thứ tự của số đó, trả về giá trị của nó, fibonacci(4) trả về 3, fibonacci(6) trả về 8.
+
+```
+let Fibonacci = function () {}
+
+Fibonacci.prototype.get = function (count) {
+  if (count < 0) return "OOPS";
+  if (count == 0) return 0;
+  let a = 0;
+  let b = 1;
+  for (let i = 1; i < count; i++) {
+      const temp = b;
+      b = a + b;
+      a = temp;
+  }
+  return b;
+}
+```
+
+Kiểm tra kết quả
+
+```
+let fib = new Fibonacci();
+
+console.log("Fibonacci at 8 is ", fib.get(8));
+```
+
+### Bài 03: Viết một hàm để kiểm tra một năm bất kỳ có phải là năm nhuận hay không?
+
+```
+let LeapYear = function () {};
+
+LeapYear.prototype.isLeapYears  = function(year) {
+	return year % 4 === 0 && ( year % 100 !== 0 || year % 400 == 0)
+}
+```
+
+Kiểm tra kết quả
+
+```
+let leapYear = new LeapYear();
+
+console.log("2025 is leap year? ", leapYear.isLeapYears(2025));
+console.log("2028 is leap year? ", leapYear.isLeapYears(2028));
+```
+
+### Bài 4: Viết một hàm nhận vào 1 mảng và một số. Bạn cần phải tìm và xóa đối số đó khỏi mảng
+
+```
+var ArrayUtils = function () {};
+
+ArrayUtils.prototype.removeFromArray  = function(...args) {
+	const array = args[0];
+	const newArray = [];
+	array.forEach((item) => {
+	  if (!args.includes(item)) {
+		newArray.push(item);
+	  }
+	});
+	return newArray;
+}
+```
+
+Kiểm tra kết quả
+
+```
+let arrayUtils = new ArrayUtils();
+
+console.log("remove  3, 4 from [1, 2, 3, 4] => " + arrayUtils.removeFromArray([1, 2, 3, 4], 3, 4));
+```
+
+### Bài 5: Viết một hàm đảo ngược chuỗi số
+
+```
+let NumberUtils = function () {};
+
+NumberUtils.prototype.reverse = (n) => {
+  n = n + "";
+
+	return Number(n.split("").reverse().join(""));
+}
+```
+
+Kiểm tra kết quả
+
+```
+let numberUtils = new NumberUtils();
+
+console.log("Reverse number of 123456 is " + numberUtils.reverse(123456));
+```
+
+### Bài 6: Cho đoạn HTML sau, Hãy viết hàm JavaScript để thay đổi style của đoạn text được hiển thị trong thẻ `p`
+
+```
+<p id ='text'>Dogoo FS01 - Exercises</p> 
+
+<div>
+    <button id="jsstyle" onclick="js_style()">Style</button>
+</div>
+```
+
+Đáp án:
+
+```
+function js_style() 
+{
+  //font styles added by JS:
+  text.style.fontSize = "24pt";
+  text.style.fontFamily = "Comic Sans MS";
+  text.style.color = "red";
+}
+```
+### Bài 7: Viết hàm JavaScript xoá toàn bộ phần tử của mảng nếu phần tử đó không là duy nhất
+
+```
+const filterNonUnique = (arr) => {
+  return arr.filter(i => arr.indexOf(i) === arr.lastIndexOf(i))
+}
+```
+
+Kiểm tra kết quả
+
+```
+console.log('Remove non unique ' + filterNonUnique([1,1,2,3,4,4,5,6,7]));
+```
+
 
