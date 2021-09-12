@@ -12,6 +12,14 @@
 
 [Ngày 05](#day05)
 
+[Ngày 06](#day06)
+
+[Ngày 07](#day07)
+
+[Ngày 08](#day08)
+
+[Ngày 09](#day09)
+
 > ## <a name="day01"> Ngày 01 </a>
 
 ## Khung kiến thức cho lập trình Full-Stack
@@ -367,7 +375,7 @@ Bài tập:
         outout: 1,2,4,5
         ```
 
-    :top: [về đầu trang](#home)
+:top: [về đầu trang](#home)
 
 > ## <a name="day06">Ngày 06 </a>
 
