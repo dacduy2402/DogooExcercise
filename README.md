@@ -106,7 +106,7 @@ SDK:
 - SpringBoot phiên bản `2.3.6`
 - [Swagger Editor](https://editor.swagger.io/) dùng cho phiên bản OpenAPI 3.0.1 
 
-:top: [VỀ ĐẦU TRANG](#home)
+:top: [về đầu trang](#home)
  
 > ## <a name="day02">Ngày 02</a>
 
@@ -261,7 +261,7 @@ Các link tham khảo
 - Interneting Is Hard: https://www.internetingishard.com/html-and-css/
 - Khoá học HTML/CSS cơ bản đến nâng cao của anh Tuấn (Evondev): https://kt.city/course/khoa-hoc-html-css-evondev
 
-:top: [VỀ ĐẦU TRANG](#home)
+:top: [về đầu trang](#home)
 
 > ## <a name="day03">Ngày 03</a>
 
@@ -284,7 +284,7 @@ Các link tham khảo
 - https://www.youtube.com/channel/UCG2ovypNCpVOTFeY1YCocmQ
 - https://www.youtube.com/c/evondev
 
-:top: [VỀ ĐẦU TRANG](#home)
+:top: [về đầu trang](#home)
 
 > ## <a name="day04">Ngày 04 </a>
 
@@ -309,7 +309,7 @@ Các link tham khảo
 - https://www.youtube.com/channel/UCG2ovypNCpVOTFeY1YCocmQ
 - https://www.youtube.com/c/evondev
 
-:top: [VỀ ĐẦU TRANG](#home)
+:top: [về đầu trang](#home)
 
 > ## <a name="day05">Ngày 5</a>
 
@@ -365,7 +365,7 @@ Bài tập:
     input: 1,2,3,3,4,5 
     outout: 1,2,4,5
     ```
-:top: [VỀ ĐẦU TRANG](#home)
+:top: [về đầu trang](#home)
 
 
 
