@@ -2,23 +2,29 @@
 
 ### <a name="home">Mục lục</a>
 
-[Ngày 01](#day01)
+Tuần 01
 
-[Ngày 02](#day02)
+- [Ngày 01](#day01) Khung kiến thức cho lập trình Full-Stack
 
-[Ngày 03](#day03)
+- [Ngày 02](#day02) Tổng hợp kiến thức HTML/CSS
 
-[Ngày 04](#day04)
+- [Ngày 03](#day03) Lập trình JavaScript cơ bản 01
 
-[Ngày 05](#day05)
+- [Ngày 04](#day04) Lập trình JavaScript cơ bản 02
 
-[Ngày 06](#day06)
+- [Ngày 05](#day05) Bài kiểm tra tuần 01
 
-[Ngày 07](#day07)
+Tuần 02
 
-[Ngày 08](#day08)
+- [Ngày 06](#day06) Lập trình ReactJS 01: Props và State
 
-[Ngày 09](#day09)
+- [Ngày 07](#day07) Lập trình ReactJS 02: Component và Component Lifecycle
+
+- [Ngày 08](#day08) Luyện tập nâng cao về Props và State
+
+- [Ngày 09](#day09) React Router và Call API trong ReactJS
+
+- [Ngày 10](#day10) Bài kiểm tra tuần 02
 
 > ## <a name="day01"> Ngày 01 </a>
 
@@ -321,7 +327,7 @@ Các link tham khảo
 
 > ## <a name="day05">Ngày 5</a>
 
-Bài tập:
+## Bài kiểm tra tuần 01
 
 1.  Tạo một máy tính cá nhân có thể thực hiện được các phép tính:
 
@@ -379,6 +385,8 @@ Bài tập:
 
 > ## <a name="day06">Ngày 06 </a>
 
+## Lập trình ReactJS 01: Props và State
+
 ### Nội dung trọng tâm
 
 - Cài đặt môi trường phát triển
@@ -403,6 +411,8 @@ Bài tập:
 
 > ## <a name="day07">Ngày 07 </a>
 
+## Lập trình ReactJS 02: Component và Component Lifecycle
+
 ### Nội dung trọng tâm
 
 - Hiểu sâu hơn về Props và State, thực hành các ví dụ tại trang chủ của [ReactJS](https://vi.reactjs.org/tutorial/tutorial.html)
@@ -418,6 +428,8 @@ Bài tập:
 :top: [về đầu trang](#home)
 
 > ## <a name="day08">Ngày 08 </a>
+
+## Luyện tập nâng cao về Props và State
 
 ### Bài tập
 
@@ -438,6 +450,8 @@ https://codepen.io/gaearon/pen/gWWZgR?editors=0010
 
 > ## <a name="day09">Ngày 09</a>
 
+## React Router và Call API trong ReactJS
+
 ### Nội dung chính
 
 - Cách gọi API trên ReactJS, dùng `axios`
@@ -448,5 +462,15 @@ https://codepen.io/gaearon/pen/gWWZgR?editors=0010
 - route
 - browserRouter
 - Link và NaviLink
+
+:top: [về đầu trang](#home)
+
+> ## <a name="day10">Ngày 10</a>
+
+## Bài tập kiểm tra tuần 02
+
+```
+đang cập nhật ....
+```
 
 :top: [về đầu trang](#home)
