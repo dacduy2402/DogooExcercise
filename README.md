@@ -455,6 +455,7 @@ https://codepen.io/gaearon/pen/gWWZgR?editors=0010
 ### Nội dung chính
 
 - Cách gọi API trên ReactJS, dùng `axios`
+- Cách dựng [fake JSON server](https://medium.com/codingthesmartway-com-blog/create-a-rest-api-with-json-server-36da8680136d)
 - Cách dùng CSS trong ReactJS
 - Tìm hiểu về React Router
 - react-router-dom
@@ -462,6 +463,57 @@ https://codepen.io/gaearon/pen/gWWZgR?editors=0010
 - route
 - browserRouter
 - Link và NaviLink
+
+## Tài liệu tham khảo
+
+- [Video](https://drive.google.com/file/d/1XqFawSQN2h5-qRa6Mp0OJbpZBLCCoSLb/view?usp=sharing)
+- https://nordiccoder.com/blog/tong-quan-ve-react-router/
+- https://viblo.asia/p/co-ban-ve-router-trong-reactjs-07LKXzAElV4
+
+## Bài tập
+
+1. Tạo fake json theo tài liệu hướng dẫn, file json có dạng
+
+   ```
+   {
+     "students": [
+       {
+         "id": 1,
+         "fullName": "Nguyen Van A",
+         "class": "FS01",
+         "score": "A"
+       },
+       {
+         "id": 1,
+         "fullName": "Tran Van B",
+         "class": "FS01",
+         "score": "B"
+       },
+       {
+         "id": 1,
+         "fullName": "Vu Van C",
+         "class": "FS01",
+         "score": "D"
+       }
+     ]
+   }
+   ```
+
+   Hãy viết một app ReactJS gọi đến API GET /students để lấy danh sách học sinh sau đó hiển thị dưới dạng bảng
+
+   | ID  | Fullname     | Class | Score |
+   | --- | ------------ | ----- | ----- |
+   | 1   | Nguyen Van A | FS01  | A     |
+   | 2   | Tran Van B   | FS01  | B     |
+   | 3   | Vu Van C     | FS01  | C     |
+
+1. Cho file đồ hoạ như hình dưới đây
+
+![baitap](./imgs/excercise.png)
+
+Hãy sử dụng kiến thức đã tìm hiểu về ReactRouter để thể hiện giao diện này trên ReactJS.
+
+Khi click vào một Item trên menu, chuyển đến trang tương ứng, nội dung trang hiển thị tên của Item.
 
 :top: [về đầu trang](#home)
 
