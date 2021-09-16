@@ -521,8 +521,26 @@ Khi click vào một Item trên menu, chuyển đến trang tương ứng, nội
 
 ## Bài tập kiểm tra tuần 02
 
-```
-đang cập nhật ....
-```
+Cho giao diện đồ hoạ như hiển thị trong video
+
+[Xem video](https://drive.google.com/file/d/1QtrEy3hVqkqvcdghXVGMhT1Gv_Pn7zBG/view?usp=sharing)
+
+1. Tạo một fake JSON Server hiển thị danh cho đối tượng Book, thể hiện được các thông tin cần thiết để hiển thị như giao diện.
+
+1. Lập trình Frontend cho giao điện trên, khi vào trang chủ mặc định HTML là trang được chọn.
+
+1. Hiển thị danh sách các đầu sách của HTML.
+
+1. Khi click vào trang hiển thị chi tiết nội dung sách
+
+1. Khi truyền bookID sai hiển thị trang thông báo not found
+
+Nâng cao (tuỳ chọn):
+
+1. Hiển thị phân trang
+
+Anh em làm và nộp bài chậm nhất sau 02 ngày làm việc tính từ ngày nhận bài tập.
+
+Nén file kết quả theo cú pháp account_baitap_tuan02.zip rồi gửi qua Telegram `@khoavd`
 
 :top: [về đầu trang](#home)
