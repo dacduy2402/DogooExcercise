@@ -1,38 +1,49 @@
-> ### Bài tập ngày 02
+### <a name="home">Đáp án</a>
+
+Tuần 01
+
+- [Bài tập ngày 02](#day02)
+
+- [Bài tập tuần 01](#tuan01)
+
+- [Bài tập ngày 07](#day07)
+
+> ### <a name="day01"> Bài tập ngày 02 </a>
 
 ### Bài 1:
+
 - Liệt kê 10 thẻ inline
-    - span
-    - img
-    - em 
-    - i
-    - b
-    - a
-    - button
-    - sub
-    - sub
+  - span
+  - img
+  - em
+  - i
+  - b
+  - a
+  - button
+  - sub
+  - sub
 - Liệt kê 10 thẻ block
-    - div
-    - selection
-    - body
-    - h1
-    - article
-    - header
-    - li
-    - ol
-    - map
-    - p
-    - select
+  - div
+  - selection
+  - body
+  - h1
+  - article
+  - header
+  - li
+  - ol
+  - map
+  - p
+  - select
 - Liệt kê thẻ semactic
-    - article
-    - aside
-    - figure
-    - footer
-    - header
-    - main
-    - mark
-    - time
-    - selection
+  - article
+  - aside
+  - figure
+  - footer
+  - header
+  - main
+  - mark
+  - time
+  - selection
 
 ### Bài 2: Làm 1 ví dụ về BEM cho block có tên là `boy`
 
@@ -115,7 +126,8 @@ body {
 }
 
 ```
-### Bài 7: Sử dụng CSS về child hoặc type để làm các màu như hình ví dụ color__item:first-child{background-color:red}: cdn.dribbble.com/users/757683/screenshots/5942067/attachments/1281258/style_02.jpg
+
+### Bài 7: Sử dụng CSS về child hoặc type để làm các màu như hình ví dụ color\_\_item:first-child{background-color:red}: cdn.dribbble.com/users/757683/screenshots/5942067/attachments/1281258/style_02.jpg
 
 ```
 <ul>
@@ -182,7 +194,7 @@ div[data-link$=".vn"] {
 
 div[data-name*="hello"] {
     color: red;
-} 
+}
 
 input[type="email"] {
     background-color: yellow;
@@ -193,9 +205,9 @@ input[type="text"] {
 }
 ```
 
-> ## Bài tập tuần 01
+> ## <a name="tuan01"> Bài tập tuần 01 </a>
 
-### Bài 1:  Tạo một máy tính cá nhân có thể thực hiện được các phép tính:
+### Bài 1: Tạo một máy tính cá nhân có thể thực hiện được các phép tính:
 
 - Cộng
 - Trừ
@@ -365,7 +377,7 @@ console.log("Reverse number of 123456 is " + numberUtils.reverse(123456));
 ### Bài 6: Cho đoạn HTML sau, Hãy viết hàm JavaScript để thay đổi style của đoạn text được hiển thị trong thẻ `p`
 
 ```
-<p id ='text'>Dogoo FS01 - Exercises</p> 
+<p id ='text'>Dogoo FS01 - Exercises</p>
 
 <div>
     <button id="jsstyle" onclick="js_style()">Style</button>
@@ -375,7 +387,7 @@ console.log("Reverse number of 123456 is " + numberUtils.reverse(123456));
 Đáp án:
 
 ```
-function js_style() 
+function js_style()
 {
   //font styles added by JS:
   text.style.fontSize = "24pt";
@@ -383,6 +395,7 @@ function js_style()
   text.style.color = "red";
 }
 ```
+
 ### Bài 7: Viết hàm JavaScript xoá toàn bộ phần tử của mảng nếu phần tử đó không là duy nhất
 
 ```
@@ -397,4 +410,255 @@ Kiểm tra kết quả
 console.log('Remove non unique ' + filterNonUnique([1,1,2,3,4,4,5,6,7]));
 ```
 
+### <a name="ngay07"> Bài tập ngày 07 </a>
 
+Cho đoạn code hiện tại của Game Tic-Tac-Toe
+
+https://codepen.io/gaearon/pen/gWWZgR?editors=0010
+
+Hãy viết thêm các chức năng:
+
+1. Hiển thị vị trí của mỗi bước đi dưới dạng (cột, dòng) trong lịch sử các bước đi.
+2. In đậm bước hiện tại trong danh sách các bước đi.
+3. Viết lại Board sử dụng hai vòng lặp để tạo ra Square thay vì hardcode như hiện nay.
+4. Thêm toogle button cho phép sắp sếp các bước đi theo thứ tự tăng hoặc giảm.
+5. Khi một người chơi thắng cuộc, highlight ba ô vuông dẫn đến chiến thắng.
+6. Khi không ai thắng cuộc, hiển thị thông báo kết quả hòa.
+
+Đáp án
+
+```
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+import './index.css'
+
+
+// class Square extends React.Component {
+//     render() {
+//         return (
+//         <button className="square"
+//             onClick={() => this.props.onClick()}>
+//             {this.props.value}
+//         </button>
+//         );
+//     }
+// }
+
+var toogleHis = false;
+
+function Square(props) {
+    return (
+        <button
+            className={props.winner ? 'square winner' : 'square'}
+            onClick={props.onClick}>
+            {props.value}
+        </button>
+    );
+}
+
+class Board extends React.Component {
+
+    renderSquare(i) {
+        const winnerRow = this.props.winner;
+
+        return <Square
+            value={this.props.squares[i]}
+            key={i}
+            onClick={() => this.props.onClick(i)}
+            winner={ winnerRow != null && winnerRow.includes(i) ? true : false} />;
+    }
+
+    render() {
+
+        const arrayX = [1, 2, 3];
+        const arrayY = [1, 2, 3];
+
+
+        return (
+            <div>
+                {
+                    arrayY.map(y => (
+                        <div className="board-row" key={y}>
+                            {
+                                arrayX.map(x => (
+                                    this.renderSquare(x*y + (y-1) * (3-x) - 1)
+                                ))
+                            }
+                        </div>
+                    ))
+                }
+            </div>
+        );
+    }
+}
+
+
+class Game extends React.Component {
+    constructor (props) {
+        super(props);
+
+        this.state ={
+            history: [{
+                squares: Array(9).fill(null),
+                pos: '',
+                isWinner: 'false',
+            }],
+            xIsNext: true,
+            stepNumber: 0,
+        }
+    }
+
+
+    handleClick (i) {
+        const history = this.state.history.slice(0, this.state.stepNumber + 1);
+        const current = history[history.length - 1];
+        const squares = current.squares.slice();
+
+        const pos = getPos(i + 1);
+
+        if (calculateWinner(squares) || squares[i]) {
+            return;
+        }
+
+        squares[i] = this.state.xIsNext ? 'X' : 'O';
+
+        //const winner = calculateWinner(squares);
+
+        //alert(winner);
+
+        this.setState({
+            history: history.concat([{
+                squares: squares,
+                pos: pos,
+            }]),
+            stepNumber: history.length,
+            xIsNext: !this.state.xIsNext,
+        });
+    }
+
+    jumpTo(step) {
+        this.setState({
+            stepNumber: step,
+            xIsNext: (step % 2) === 0,
+        });
+    }
+
+    toogle() {
+        toogleHis = !toogleHis;
+
+        this.forceUpdate();
+    }
+
+    render() {
+
+        const history  = this.state.history;
+
+        const current = history[this.state.stepNumber];
+
+        const winner = calculateWinner(current.squares);
+
+        const showHistory = toogleHis ? history.slice().reverse() : history;
+
+        const moves = showHistory.map((step, index) => {
+
+            const indexReverse = toogleHis ? Math.abs(index - (history.length - 1)) : index;
+
+            let desc = '';
+            let lastClass = '';
+
+            if (toogleHis) {
+                lastClass = index === 0 ? 'last-step' : 'step';
+                desc = index === (history.length - 1) ? 'Go to game start' : 'Go to move #' + indexReverse;
+            } else {
+                lastClass = (index + 1 === history.length) ? 'last-step' : 'step';
+                desc = index ? 'Go to move #' + index : 'Go to game start';
+            }
+
+            return (
+                <li key={index} className={ lastClass }>
+                    <button onClick={() => this.jumpTo(indexReverse)}> {desc} { step.pos } </button>
+                </li>
+            );
+
+        });
+
+        let status;
+
+        if (winner) {
+            status = 'Winner: ' + current.squares[winner[0]];
+        } else {
+            const endGame = current.squares.includes(null) ? false : true;
+
+            if (endGame) {
+                status = 'The game draw';
+            } else {
+                status = 'The next player is ' + (this.state.xIsNext ? 'X' : 'O');
+            }
+        }
+
+        return (
+            <div className="game">
+                <div className="game-board">
+                    <Board squares={current.squares}
+                           onClick={(i) => this.handleClick(i)}
+                           winner={winner}
+                    />
+                </div>
+                <div className="game-info">
+                <div>{ status }</div>
+                <ol> <button onClick={() => {this.toogle()}}> Toogle</button> </ol>
+                <ol>{ moves } </ol>
+                </div>
+            </div>
+        );
+    }
+}
+
+
+ReactDOM.render(
+    <Game />,
+    document.getElementById('root')
+);
+
+function calculateWinner(squares) {
+    const lines = [
+        [0, 1, 2],
+        [3, 4, 5],
+        [6, 7, 8],
+        [0, 3, 6],
+        [1, 4, 7],
+        [2, 5, 8],
+        [0, 4, 8],
+        [2, 4, 6],
+    ];
+
+    for (let i = 0; i < lines.length; i++) {
+        const [a, b, c] = lines[i];
+        if (squares[a] && squares[a] === squares[b] && squares[a] === squares[c]) {
+            //return squares[a];
+            return lines[i];
+        }
+    }
+
+    return null;
+}
+
+function getXPos(index) {
+    let xPos = index % 3;
+
+    if (xPos === 0) {
+        xPos = 3;
+    }
+
+    return xPos;
+}
+
+function getYPos(index) {
+    return Math.ceil(index/3);
+}
+
+function getPos(index) {
+    return 'X:' + getXPos(index) + ' Y:' + getYPos(index);
+}
+```
