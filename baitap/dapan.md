@@ -8,7 +8,7 @@ Tuần 01
 
 - [Bài tập ngày 07](#day07)
 
-> ### <a name="day01"> Bài tập ngày 02 </a>
+> ### <a name="day02"> Bài tập ngày 02 </a>
 
 ### Bài 1:
 
@@ -204,6 +204,8 @@ input[type="text"] {
     background-color: violet;
 }
 ```
+
+:top: [về đầu trang](#home)
 
 > ## <a name="tuan01"> Bài tập tuần 01 </a>
 
@@ -410,7 +412,9 @@ Kiểm tra kết quả
 console.log('Remove non unique ' + filterNonUnique([1,1,2,3,4,4,5,6,7]));
 ```
 
-### <a name="ngay07"> Bài tập ngày 07 </a>
+:top: [về đầu trang](#home)
+
+### <a name="day07"> Bài tập ngày 07 </a>
 
 Cho đoạn code hiện tại của Game Tic-Tac-Toe
 
@@ -662,3 +666,5 @@ function getPos(index) {
     return 'X:' + getXPos(index) + ' Y:' + getYPos(index);
 }
 ```
+
+:top: [về đầu trang](#home)
