@@ -484,13 +484,13 @@ https://codepen.io/gaearon/pen/gWWZgR?editors=0010
          "score": "A"
        },
        {
-         "id": 1,
+         "id": 2,
          "fullName": "Tran Van B",
          "class": "FS01",
          "score": "B"
        },
        {
-         "id": 1,
+         "id": 3,
          "fullName": "Vu Van C",
          "class": "FS01",
          "score": "D"
