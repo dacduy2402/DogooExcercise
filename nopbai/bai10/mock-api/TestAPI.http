@@ -1,0 +1,28 @@
+# run json : npm run dev
+
+# @name getALLcategories
+GET http://localhost:8080/v1/api/categories
+
+###
+# @name getBookByID
+GET http://localhost:8080/v1/api/books/?bookID=12
+###
+# @name getALLbooks
+GET http://localhost:8080/v1/api/books
+
+###
+POST http://localhost:8080/v1/api/books 
+Content-Type:  : application/json
+
+{
+    
+    "author": "Nguyen Van A",
+    "img": "FS01",
+
+}
+
+###
+# @name Paginate
+
+GET http://localhost:8080/v1/api/books?_page=1&_limit=5
+

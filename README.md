@@ -26,6 +26,10 @@ Tuần 02
 
 - [Ngày 10](#day10) Bài kiểm tra tuần 02
 
+Tuần 03
+
+- [Ngày 11](#day11) Tìm hiểu về RESTful và nguyên tắc thiết kế
+
 > ## <a name="day01"> Ngày 01 </a>
 
 ## Khung kiến thức cho lập trình Full-Stack
@@ -542,5 +546,129 @@ Nâng cao (tuỳ chọn):
 Anh em làm và nộp bài chậm nhất sau 02 ngày làm việc tính từ ngày nhận bài tập.
 
 Nén file kết quả theo cú pháp account_baitap_tuan02.zip rồi gửi qua Telegram `@khoavd`
+
+:top: [về đầu trang](#home)
+
+> ## <a name="day11">Ngày 11</a>
+
+## Tìm hiểu về RESTful và nguyên tắc thiết kế
+
+### Mục tiêu đạt được
+
+- Hiểu khải niệm thế nào là web, web server, web service, REST, RESTful API
+- Nguyên lý thiết kế RESTful API
+- Luyện tập về thiết kế API
+
+### Nội dung
+
+- [Http Methods](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods):
+  - `GET` được sử dụng để request dữ liệu từ một nguồn dữ liệu cụ thể.
+  - `POST` được sử dụng để gửi dữ liệu tới một server để tạo hoặc cập nhật tài nguyên trên đó
+  - `PUT` được sử dụng để gửi dữ liệu tới server để tạo hoặc cập nhật tài nguyên trên đó
+  - `HEAD` gần giống giống với lại GET, tuy nhiên nó không có response body. Dùng để kiểm tra trước khi gọi GET
+  - `DELETE` được sử dụng để xóa tài nguyên cụ thể nào đó.
+  - `PATCH` dùng để cập nhật một thuộc tính của tài nguyên.
+  - `OPTIONS` được sử dụng để mô tả các tùy chọn trong quá trình giao tiếp cho tài nguyên đích.
+- Nguyên tắc REST:
+
+  - Sử dụng các phương thức HTTP một cách rõ ràng
+  - Phi trạng thái
+  - Hiển thị cấu trúc thư mục như các URls
+  - Truyền tải JavaScript Object Notation (JSON), XML hoặc cả hai.
+
+- RESTful Web Service là các Web Service được viết dựa trên kiến trúc REST.
+
+- Nguyên tắc thiết kế RESTful APIs:
+
+  1. Những hành động CRUD sử dụng những phương thức HTTP
+
+     - GET (SELECT): Trả về một Resource hoặc một danh sách Resource.
+
+     - POST (CREATE): Tạo mới một Resource.
+
+     - PUT (UPDATE): Cập nhật thông tin cho Resource.
+
+     - PATCH (UPDATE): Cập nhật một thành phần, thuộc tính của Resouce
+
+     - DELETE (DELETE): Xoá một Resource.
+
+  1. Sử dụng danh từ số nhiều, không dùng động từ
+
+     Mỗi thực thể (entity) như Nhân viên (employee), Tài liệu (document)... Khi thiết kế API sẽ sử dụng danh từ số nhiều:
+
+     ```
+     - GET /employees
+     - GET /employees/{id}
+     - PUT /employee{id}
+     - POST /employees
+     - PATH /employee{id}
+     - DELETE /employee{id}
+     ```
+
+     KHÔNG sử dụng động từ cho việc thiết kế API
+
+     - GET /getAllEmployee
+     - GET /getDetailEmployee
+     - ...
+
+  1. Tên API là chữ thường, với tên dài sử dụng dấu gạch ngang (-) để thể hiện ý nghĩa rõ ràng hơn:
+     ```
+     - GET /managed-devices
+     ```
+  1. API phải thể thiện được cấu trúc quan hệ. Giả sử thực thể Nhân viên (employee) có quản lý các Thiết bị (device). Khi thiết kế API cần thể hiện được quan hệ của thực thể này
+     - `GET /employees/{id}/devices` hiển thị toàn bộ thiết bị mà nhân viên đó quản lý
+     - `GET /employees/{id}/devices/{deviceId}` lấy thông tin chi tiết của thiết bị có id là `deviceId` mà nhân viên có `id` quản lý
+     - `POST /employees/{id}/devices` thêm thiết bị cho nhân viên
+     - ...
+  1. Sử dụng version để quản lý phiên bản của API
+     ```
+     - /v1/dogoo/employees
+     - /v2/dogoo/employees
+     ```
+  1. Tài liệu hoá
+
+     - OpenAPI, Swagger
+
+  1. Mã trạng thái
+     ```
+      200 - OK - Eyerything is working
+      201 - Created - A new resource has been created
+      304 - Not Modified - The client can use cached data
+      400 - Bad Request - The request was invalid or cannot be served. The exact error should be explained in the error payload. E.g. "The JSON is not valid"
+      401 - Unauthorized - The request requires an user authentication
+      403 - Forbidden -The server understood the request, but is refusing it or the access is not allowed.
+      404 - Not found - There is no resource behind the URI.
+      422 - Unprocessable Entity - Should be used if the server cannot process the enitity, e.g. if an image cannot be formatted or mandatory fields are missing in the payload.
+      429 - Too Many Requests - The user has sent too many requests in a given amount of time ("rate limiting").
+      500 - Internal Server Error - API developers should avoid this error. If an error occurs in the global catch blog, the stracktrace should be logged and not returned as response.
+     ```
+  1. Error Response Body
+     ```
+     {
+        "status": 401,
+        "code": "DOGOO-100",
+        "message": "string",
+        "developerMessage": "string"
+      }
+     ```
+
+### Tài liệu tham khảo
+
+- Khái niệm về [Web Service](https://openplanning.net/10773/restful-web-service-la-gi)
+- Nguyên tắc thiết kế
+  - https://viblo.asia/p/thiet-ke-restful-api-nhu-the-nao-MdZGAYdyGox
+  - https://itplusx.info/restful-api-thiet-ke-phan-2/
+
+### Bài tập luyện tập
+
+1. Liệt kê các phương thức (method) trong RESTful API, nêu ý nghĩa mỗi phương thức
+1. Nêu ý nghĩa các mã lỗi: 400, 401, 403, 404, 405, 406, 415, 500, 503
+1. API sau là đúng hay sai, tại sao
+   - GET /document/{id}
+   - POST /devices
+   - PUT /departments/employees/{employeeId}
+   - DELETE /Workflows/{id}
+   - PATCH /managedevice/{id}
+1. Cho hai thực thể Phòng ban và Nhân viên, thiết kế API thể hiện cho quản lý (CRUD) hai thực thể này. (Một phòng ban có nhiều nhân viên)
 
 :top: [về đầu trang](#home)
