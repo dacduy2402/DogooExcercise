@@ -30,6 +30,8 @@ Tuần 03
 
 - [Ngày 11](#day11) Tìm hiểu về RESTful và nguyên tắc thiết kế
 
+- [Ngày 12](#day12) Thiết kế API bằng Swagger
+
 > ## <a name="day01"> Ngày 01 </a>
 
 ## Khung kiến thức cho lập trình Full-Stack
@@ -670,5 +672,37 @@ Nén file kết quả theo cú pháp account_baitap_tuan02.zip rồi gửi qua T
    - DELETE /Workflows/{id}
    - PATCH /managedevice/{id}
 1. Cho hai thực thể Phòng ban và Nhân viên, thiết kế API thể hiện cho quản lý (CRUD) hai thực thể này. (Một phòng ban có nhiều nhân viên)
+
+:top: [về đầu trang](#home)
+
+> ## <a name="day12">Ngày 12</a>
+
+## Thiết kế RESTful APIs bằng Swagger
+
+### Mục tiêu đạt được
+
+- Phân tích được cấu trúc API cần xây dựng
+- Phân tích được cấu trúc dữ liệu cho request/response
+- Tài liệu hoá trên Swagger
+
+### Nội dung
+
+- Các thành phần cấu thành lên một tài liệu
+  - Thông tin của tài liệu `info`
+  - Định nghĩa kiểu dữ liệu cho request/response
+  - Định nghĩa mã lỗi
+  - Định nghĩa tham biến mặc định cho toàn bộ APIs
+  - Định nghĩa APIs
+
+### Tài liệu tham khảo và tra cứu
+
+- https://swagger.io/specification/v2/
+- [File tài liệu bài giảng](https://drive.google.com/file/d/1_NTsqkI1ZhxE5voGDQR0jWF68vabVUw_/view?usp=sharing)
+
+### Bài tập
+
+1. Làm lại bài tập 04 - ngày 11, thiết kế RESTful APIs bằng Swagger
+
+1. Thêm thức năng xác thực API thông qua API key cho các APIs đã thiết kế ở trên
 
 :top: [về đầu trang](#home)
