@@ -32,6 +32,8 @@ Tuần 03
 
 - [Ngày 12](#day12) Thiết kế API bằng Swagger
 
+- [Ngày 13](#day13) Lập trình RESTful API trên Spring Boot
+
 > ## <a name="day01"> Ngày 01 </a>
 
 ## Khung kiến thức cho lập trình Full-Stack
@@ -704,5 +706,46 @@ Nén file kết quả theo cú pháp account_baitap_tuan02.zip rồi gửi qua T
 1. Làm lại bài tập 04 - ngày 11, thiết kế RESTful APIs bằng Swagger
 
 1. Thêm thức năng xác thực API thông qua API key cho các APIs đã thiết kế ở trên
+
+:top: [về đầu trang](#home)
+
+> ## <a name="day13">Ngày 13</a>
+
+## Lập trình RESTful API trên Spring Boot
+
+### Mục tiêu đạt được
+
+- Cách khởi tạo một ứng dụng trên Spring Boot
+- Lập trình được RESTful APIs
+- Phân lớp ứng dụng trong lập trình RESTful
+
+### Nội dung
+
+- Các kiểu dự án Spring Boot
+- Cách tạo Spring Boot project
+- Các dependency cho RESTful API
+- Phân lớp trong Spring Boot
+  - Controller
+  - Service
+  - Model
+  - Entity
+  - Repository
+  - Mapper
+  - Validator
+- Công cụ test APIs
+  - Postman
+  - Insomnia
+
+### Tài liệu tham khảo
+
+- [Tạo Spring Boot project](https://viblo.asia/p/tao-rest-api-voi-spring-boot-mysql-jpa-repository-Eb85oJykl2G)
+
+- [Khác nhau @Component và @Service](https://shareprogramming.net/su-khac-biet-giua-component-repository-va-service-trong-spring/)
+
+### Bài tập
+
+1. Dựa trên Thiết kế Swagger bài tập 1 - ngày 12, hãy lập trình RESTful APIs theo tài liệu thiết kế
+
+1. (Nâng cao) Dựa trên thiết kế bài tập 2 - ngày 12 về xác thực API Key, lập trình chức năng xác thực API.
 
 :top: [về đầu trang](#home)
