@@ -1,0 +1,5 @@
+{
+  "emailId": "${email}",
+  "firstName": "${firstName}",
+  "lastName": "${lastName}"
+}
