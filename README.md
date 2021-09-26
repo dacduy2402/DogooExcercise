@@ -34,6 +34,16 @@ Tuần 03
 
 - [Ngày 13](#day13) Lập trình RESTful API trên Spring Boot
 
+- [Ngày 14](#day14) Sử dụng công cụ để tạo code từ Swagger
+
+- [Ngày 15](#day15) Bài tập thực hành về Spring Boot
+
+Tuần 04
+
+- [Ngày 16](#day16) Cách viết UnitTest trong code
+
+- [Ngày 17,18,19](#day17) Bài kiểm tra kiến thức tổng hợp khóa FS01
+
 > ## <a name="day01"> Ngày 01 </a>
 
 ## Khung kiến thức cho lập trình Full-Stack
@@ -747,5 +757,71 @@ Nén file kết quả theo cú pháp account_baitap_tuan02.zip rồi gửi qua T
 1. Dựa trên Thiết kế Swagger bài tập 1 - ngày 12, hãy lập trình RESTful APIs theo tài liệu thiết kế
 
 1. (Nâng cao) Dựa trên thiết kế bài tập 2 - ngày 12 về xác thực API Key, lập trình chức năng xác thực API.
+
+:top: [về đầu trang](#home)
+
+> ## <a name="day14">Ngày 14</a>
+
+## Sử dụng công cụ để tạo code từ Swagger file trên Spring Boot
+
+### Mục tiêu đạt được
+- Hiểu ý nghĩa tại sao cần sử dụng công cụ tạo code tự động
+- Biết cách sử dụng Swagger Code Generator trên Spring Boot
+
+### Nội dung
+
+### Tài liệu tham khảo
+
+- Xem ví dự về tài liệu tham khảo tại `samples\speedhome-poc`
+
+### Bài tập
+
+1. Thiết kế APIs cho ứng dụng Todo List
+1. Tạo dự án sử dụng Code Generator
+1. Lập trình APIs bằng việc sử dụng Code Generator
+
+:top: [về đầu trang](#home)
+
+> ## <a name="day15">Ngày 15</a>
+
+## Bài tập thực hành về Spring Boot
+
+1. Thiết kế APIs trên Swagger cho phần backend của ứng dụng hiện thị Sách trong [bài tập tuần 02](#day10)
+1. Lập trình các API đã thiết kế trên Spring Boot
+
+Nâng cao
+1. Lập trình API bằng việc sử dụng Swagger Code Generator
+
+:top: [về đầu trang](#home)
+
+> ## <a name="day16">Ngày 16</a>
+
+## Cách viết UnitTest trong code
+
+### Mục tiêu đạt được
+- Hiểu ý nghĩa của việc viết Test
+- Phân biệt được các loại test
+- Viết Unit Test và BDD
+
+### Nội dung
+- Cách viết một Unit Test
+- Ý nghĩa của `@InjectMocks` `@Mock` `@Test` 
+- Các thư viện hay sử dụng
+```
+import static org.hamcrest.CoreMatchers.is;
+import static org.junit.Assert.assertThat;
+import static org.mockito.ArgumentMatchers.anyString;
+import static org.mockito.Mockito.when;
+import static org.mockito.ArgumentMatchers.any;
+```
+
+### Tài liệu tham khảo
+
+- Xem ví dụ về tài liệu tham khảo tại `samples\speedhome-poc\speedhome-service`
+
+### Bài tập
+
+1. Viết Unit Test cho layer service trong ví dụ `samples\speedhome-poc\speedhome-service`
+
 
 :top: [về đầu trang](#home)
