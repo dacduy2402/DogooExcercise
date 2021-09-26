@@ -1,5 +1,0 @@
-{
-  "emailId": "${emailUpdate}",
-  "firstName": "${firstName}",
-  "lastName": "${lastName}"
-}
