@@ -826,11 +826,11 @@ import static org.mockito.ArgumentMatchers.any;
 
 :top: [về đầu trang](#home)
 
-> ## <a name="day16">Ngày 17</a>
+> ## <a name="day17">Ngày 17-18-19-20</a>
 
 ## Bài kiểm tra kiến thức tổng hợp khóa FS01
 
-Xây dựng ứng dụng MiniBlogs.
+Xây dựng ứng dụng `MiniBlogs`.
 
 Ứng dụng bao gồm 03 trang:
 - Home 
@@ -840,8 +840,12 @@ Xây dựng ứng dụng MiniBlogs.
 `Home` hiển thị:
 - Thông tin tác giả được fix cứng
 - Danh sách bài viết
+- Hiên thị thông tin chi tiết bài viết
 
 ![home](./imgs/kiemtra/home.png)
+
+![home](./imgs/kiemtra/detailpost.png)
+
 
 `About` thông tin tác giả:
 - Hiển thị thông tin chi tiết về tác giả (fix cứng)
@@ -854,5 +858,20 @@ Xây dựng ứng dụng MiniBlogs.
 ![contact](./imgs/kiemtra/contact.png)
 
 
+Yêu cầu:
+
+1. Xây dựng Front-end trên ReactJS, HTML/CSS như file thiết kế
+    - Sử dụng quy tắc BEM trong HTML
+    - Các viết CSS chuẩn tắc
+    - Chia các component hợp lý trong ReactJS
+
+1. Xây dựng Backend sử dụng Spring Boot app trong thư mục `samples\speedhome`
+    - Thiết kế RESTful APIs cần thiết cho ứng dụng `MiniBlogs`
+        - Tạo bài viết
+        - Hiển thị danh sách bài viết
+        - Hiển thị chi tiết bài viết
+    - Thực hiện viết UnitTest cho các layer trong Backend
+
+1. [Nâng cao] Viết chức năng tìm kiếm trong ứng dụng có sử dụng `Fulltext Search`
 
 :top: [về đầu trang](#home)
