@@ -772,7 +772,7 @@ Nén file kết quả theo cú pháp account_baitap_tuan02.zip rồi gửi qua T
 
 ### Tài liệu tham khảo
 
-- Xem ví dự về tài liệu tham khảo tại `samples\speedhome-poc`
+- Xem ví dự về tài liệu tham khảo tại `samples\speedhome`
 
 ### Bài tập
 
@@ -802,6 +802,7 @@ Nâng cao
 - Hiểu ý nghĩa của việc viết Test
 - Phân biệt được các loại test
 - Viết Unit Test và BDD
+- Check code với SonarLint
 
 ### Nội dung
 - Cách viết một Unit Test
@@ -817,11 +818,41 @@ import static org.mockito.ArgumentMatchers.any;
 
 ### Tài liệu tham khảo
 
-- Xem ví dụ về tài liệu tham khảo tại `samples\speedhome-poc\speedhome-service`
+- Xem ví dụ về tài liệu tham khảo tại `samples\speedhome\speedhome-service`
 
 ### Bài tập
 
-1. Viết Unit Test cho layer service trong ví dụ `samples\speedhome-poc\speedhome-service`
+1. Viết Unit Test cho layer service trong ví dụ `samples\speedhome\speedhome-service`
+
+:top: [về đầu trang](#home)
+
+> ## <a name="day16">Ngày 17</a>
+
+## Bài kiểm tra kiến thức tổng hợp khóa FS01
+
+Xây dựng ứng dụng MiniBlogs.
+
+Ứng dụng bao gồm 03 trang:
+- Home 
+- About
+- Contact
+
+`Home` hiển thị:
+- Thông tin tác giả được fix cứng
+- Danh sách bài viết
+
+![home](./imgs/kiemtra/home.png)
+
+`About` thông tin tác giả:
+- Hiển thị thông tin chi tiết về tác giả (fix cứng)
+- Khi click vào nút [Get in touch] liên kết đến trang Contact
+
+![about](./imgs/kiemtra/about.png)
+
+`Contact` hiển thị form cho phép lưu thông tin liên hệ đến tác giả
+
+![contact](./imgs/kiemtra/contact.png)
+
 
 
 :top: [về đầu trang](#home)
