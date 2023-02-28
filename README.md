@@ -541,7 +541,7 @@ Khi click vào một Item trên menu, chuyển đến trang tương ứng, nội
 
 Cho giao diện đồ hoạ như hiển thị trong video
 
-[Xem video](https://drive.google.com/file/d/1QtrEy3hVqkqvcdghXVGMhT1Gv_Pn7zBG/view?usp=sharing)
+[Xem video](https://drive.google.com/file/d/1pu-XPkDC7764MvRzJmfeOuAGqpbMfdeZ/view?usp=sharing)
 
 1. Tạo một fake JSON Server hiển thị danh cho đối tượng Book, thể hiện được các thông tin cần thiết để hiển thị như giao diện.
 
