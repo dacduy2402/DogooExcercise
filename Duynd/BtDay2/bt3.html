@@ -1,0 +1,105 @@
+<!-- Áp dụng kiến thức về BEM đặt tên cho UI này:
+ static.collectui.com/shots/1436570/dropdown-menu-large Hint: Block có tên `dropdown -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BT3</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons"
+    rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined"
+    rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Round"
+    rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Sharp"
+    rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Two+Tone"
+    rel="stylesheet">
+    <style>
+        ul{
+            padding: 0;
+            margin: 0;
+        }
+        .dropdown{
+            margin: auto;
+            width: 400px;
+            font-size: 25px;
+            text-transform: uppercase;
+            color: #ffffff;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+        .dropdown_item{
+            border-radius: 5px;
+            background-color: #de4a3e;
+            padding: 10px;
+        }
+        .dropdown_item li{
+            position: relative;
+            list-style: none;
+            padding: 10px;
+        }
+        .dropdown--icon{
+            position: absolute;
+            right: 10px;
+            font-size: 30px;
+        }
+        .dropdown--sub li:hover {
+            background-color: #c64236;
+        }
+        .dropdown--sub{
+            margin-top: 10px;
+        }
+        .dropdown_item:active + .dropdown--sub{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="dropdown">
+        <div class="dropdown_item dropdown--parent">
+            <ul>
+                <li>
+                    <a>call to action</a>
+                    <span class="material-icons-outlined dropdown--icon">
+                        arrow_drop_down
+                    </span>
+                </li>
+            </ul>
+        </div>
+        <div class="dropdown_item dropdown--sub">
+            <ul>
+                <li>
+                    <a>new project</a>
+                    <span class="material-icons-outlined dropdown--icon">
+                        add_circle_outline
+                    </span>
+                </li>
+                <li id="default">
+                    <a>view profile</a>
+                    <span class="material-icons-outlined dropdown--icon">
+                        perm_identity
+                    </span>
+                </li>
+                <li>
+                    <a>setting</a>
+                    <span class="material-icons-outlined dropdown--icon">
+                        settings
+                    </span>
+                </li>
+                <li>
+                    <a>logout</a>
+                    <span class="material-icons-outlined dropdown--icon">
+                        power_settings_new
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

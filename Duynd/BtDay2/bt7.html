@@ -1,0 +1,83 @@
+<!-- Sử dụng CSS về child hoặc type để làm các màu như hình ví dụ color__item:
+first-child{background-color:red}: 
+cdn.dribbble.com/users/757683/screenshots/5942067/attachments/1281258/style_02.jpg -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BT7</title>
+    <style>
+        .box ul{
+            display: flex;
+            flex-direction: row;
+        }
+        .item{
+            list-style: none;
+            height: 150px;
+            width: 150px;
+            margin: 20px;
+        }
+        .row1 .item:first-child{
+            background-color: #a24bf0;
+        }
+        .row1 .item:nth-child(2){
+            background-color: #38dbb2;
+        }
+        .row1 .item:nth-child(3){
+            background-color: #25c2e3;
+        }
+        .row1 .item:nth-child(4){
+            background-color: #ea344f
+        }
+        .row1 .item:nth-last-child(2){
+            background-color: #dd44a7;
+        }
+        .row1 .item:last-child{
+            background-color: #f7ac2a;
+        }
+        .row2 .item:last-child{
+            background-color: #fcfcfc;
+        }
+        .row2 .item:nth-last-child(2){
+            background-color: #e8e8e8;
+        }
+        .row2 .item:nth-last-child(3){
+            background-color: #d2d2d2;
+        }
+        .row2 .item:nth-last-child(4){
+            background-color: #888888;
+        }
+        .row2 .item:nth-last-child(5){
+            background-color: #555555;
+        }
+        .row2 .item:nth-last-child(6){
+            background-color: #000000;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="row1">
+            <ul>
+                <li class="item"></li>
+                <li class="item"></li>
+                <li class="item"></li>
+                <li class="item"></li>
+                <li class="item"></li>
+                <li class="item"></li>
+            </ul>
+        </div>
+        <div class="row2">
+            <ul>
+                <li class="item"></li>
+                <li class="item"></li>
+                <li class="item"></li>
+                <li class="item"></li>
+                <li class="item"></li>
+                <li class="item"></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

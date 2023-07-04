@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BT8</title>
+    <style>
+        /* chọn ra các thẻ div có data-link bắt đầu bằng https */
+        div[data-link ^="https"]{
+            color: red
+        }
+
+        /* Chọn ra các thẻ div có data-link kết thúc bằng .vn */
+        div[data-link $=".vn"]{
+            color: blue;
+        }
+        /* Chọn ra các thẻ div có data-name có chứa chữ hello */
+        div[data-name *="hello"]{
+            color: green;
+        }
+
+        /* Chọn ra input có type là email */
+        input[type ="email"]{
+            background-color: #DF7401;
+        }
+
+        /* Chọn ra input có name là fullname */
+        input[name ="fullname"]{
+            background-color: #848484;
+        }
+    </style>
+</head>
+
+<body>
+    <div data-link="google.com">google.com</div>
+
+    <div data-link="vnexpress.vn">facebook.com</div>
+
+    <div data-name="hello">hello</div>
+
+    <div data-name="againhello">again hello</div>
+
+    <input type="email" name="email">
+    <br>
+    <input type="text" name="fullname">
+</body>
+
+</html>

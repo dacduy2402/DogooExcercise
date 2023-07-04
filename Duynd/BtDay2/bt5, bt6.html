@@ -1,0 +1,68 @@
+<!-- 5. Tạo ra các button như hình:
+designerup.co/blog/content/images/2019/01/button_corners.png sử dụng padding, margin, text-align,
+kiến thức đã học -->
+<!-- 6. Áp dụng pseudo :hover để khi rê chuột vào kết quả bài 5 thì đổi màu nền và màu chữ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BT5 & BT6</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <style>
+        .row{
+            background-color: #e6e6e6;
+            margin: auto 0px;
+        }
+        .box_item{
+            display: flex;
+            flex-direction: column;
+            padding: 50px 80px 70px 10px;
+            display: flex;
+            text-align: center;
+        }
+        .box_item a{
+            text-transform: uppercase;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        button{
+            background-color: #5a4bad;
+            color: #ffffff;
+            font-weight: bold;
+            font-size: 35px;
+            padding: 15px 0px;
+            margin-top: 20px;
+        }
+        #btn_rounded{
+            border-radius: 5px;
+        }
+        #btn_round{
+            border-radius: 40px;
+        }
+        button:hover {
+            background-color: #FF0000;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="row">
+        <div class="box_item col-4">
+            <a>sqaure corners</a>
+            <button>Button</button>
+        </div>
+        <div class="box_item col-4">
+            <a>rounded corners</a>
+            <button id="btn_rounded">Button</button>
+        </div>
+        <div class="box_item col-4">
+            <a>round corners</a>
+            <button id="btn_round">Button</button>
+        </div>
+    </div>
+</body>
+</html>
