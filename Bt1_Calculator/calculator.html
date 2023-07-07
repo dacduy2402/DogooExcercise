@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Calculator</title>
+
+    <link rel="stylesheet" href="calculator.css">
+    <script src="calculator.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <form action="">
+            <table>
+                <tr>
+                    <th colspan="5">Dogoo Calculator</th>
+                </tr>
+                <tr>
+                    <td colspan="5">
+                        <input type="text" id="display" value="" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button type="button" onclick="displayValue('&lpar;')">(</button>
+                    </td>
+                    <td>
+                        <button type="button" onclick="displayValue('&rpar;')">)</button>
+                    </td>
+                    <td>
+                        <button type="button" onclick="square()">x<sup>2</sup></button>
+                    </td>
+                    <td colspan="2">
+                        <button type="button" type="" onclick="clearSreen()">AC</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button type="button" type="button" value="7" onclick="displayValue('7')">7</button>
+                    </td>
+                    <td>
+                        <button type="button" value="8" onclick="displayValue('8')">8</button>
+                    </td>
+                    <td>
+                        <button type="button" value="9" onclick="displayValue('9')">9</button>
+                    </td>
+                    <td>
+                        <button type="button" value="+" onclick="displayValue('+')">＋</button>
+                    </td>
+                    <td>
+                        <button type="button" value="" onclick="squareRoot()">√x</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button type="button" value="4" onclick="displayValue('4')">4</button>
+                    </td>
+                    <td>
+                        <button type="button" value="5" onclick="displayValue('5')">5</button>
+                    </td>
+                    <td>
+                        <button type="button" value="6" onclick="displayValue('6')">6</button>
+                    </td>
+                    <td>
+                        <button type="button" value="-" onclick="displayValue('-')">﹣</button>
+                    </td>
+                    <td>
+                        <button type="button" value="" onclick="absolute()">|x|</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button type="button" value="1" onclick="displayValue('1')">1</button>
+                    </td>
+                    <td>
+                        <button type="button" value="2" onclick="displayValue('2')">2</button>
+                    </td>
+                    <td>
+                        <button type="button" value="3" onclick="displayValue('3')">3</button>
+                    </td>
+                    <td>
+                        <button type="button" value="*" onclick="displayValue('*')">*</button>
+                    </td>
+                    <td>
+                        <button type="button" value="/" onclick="displayValue('/')">/</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button type="button" value="0" onclick="displayValue('0')">0</button>
+                    </td>
+                    <td>
+                        <button type="button" value="." onclick="displayValue('.')">.</button>
+                    </td>
+                    <td>
+                        <button type="button">Del</button>
+                    </td>
+                    <td colspan="2">
+                        <button type="button" value="=" onclick="calculate()">=</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+
+</html>
