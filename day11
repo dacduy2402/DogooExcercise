@@ -1,0 +1,37 @@
+1. Các phương thức trong RESTful API và ý nghĩa của mỗi phương thức:
+- GET: Phương thức GET được sử dụng để lấy dữ liệu từ nguồn tài nguyên. Khi gửi yêu cầu GET, server sẽ trả về nội dung của của tài nguyên được yêu cầu
+- POST: Phương thức POST được sử dụng để tạo mới hoặc thực hiện hành động xử lý trên server. Khi gửi yêu cầu POST, client gửi dữ liệu đến server và server sẽ thực hiện hành động tuơng ứng
+- PUT: Phương thức PUT được sử dụng để cập nhật 1 tài nguyên hoặc tạo mới tài nguyên không tồn tại. Khi gửi yêu cầu PUT, client gửi dữ liệu đến server và yêu cầu cập nhạt hoặc tạo mới tài nguyên với dữ liệu được gửi đi
+- PATCH: Phương thức PATCH được sử dụng để cập nhật 1 phần của tài nguyên. Khác với PUT, PATCH chỉ cần gửi dữ liệu của phần cần cập nhật, không cần gửi toàn bộ dữ liệu của tài nguyên với dữ liệu của tài nguyên. Điều này giúp giảm lượng dữ liệu gửi đi và tiết kiệm băng thông
+- DELETE: Phương thức DELETE được sử dụng để xóa 1 tài nguuyên khỏi server. Khi gửi yêu cầu DELETE, server sẽ xóa tài nguyên tương ứng
+- OPTIONS: phương thức OPTIONS được sẻ dụng để láy thông tin về các phương thức HTTP mà server hỗ trợ cho 1 tài nguyên cụ thể. Khi gửi yêu cầu OPTIONS, server sẽ trả về danh sách các phương thức mà client có thể sử dụng cho tài gnuyên đó
+
+2. Ý nghĩa các mã lỗi: 400, 401, 403, 404, 405, 406, 415, 500, 503
++ 400 Bad Request: Mã lỗi này được trả về khi server không thể xử lý yêu cầu do lỗi cú pháp hoặc dữ liệu không hợp lệ từ phía client. Đây là một lỗi do lỗi của client và yêu cầu cần được sửa đổi trước khi gửi lại.
++ 401 Unauthorized: Mã lỗi này được trả về khi client không có quyền truy cập vào tài nguyên hoặc yêu cầu xác thực (authentication) để tiếp tục truy cập. Client cần cung cấp thông tin xác thực hợp lệ để tiếp tục truy cập.
++ 403 Forbidden: Mã lỗi này được trả về khi server từ chối yêu cầu của client vì nguyên nhân bảo mật. Khác với lỗi 401, 403 không yêu cầu xác thực và cho biết rằng client đã được xác thực, nhưng không có quyền truy cập vào tài nguyên yêu cầu.
++ 404 Not Found: Mã lỗi này được trả về khi server không tìm thấy tài nguyên được yêu cầu bởi client. Điều này có thể xảy ra khi URL không chính xác hoặc tài nguyên không tồn tại trên server.
++ 405 Method Not Allowed: Mã lỗi này được trả về khi phương thức HTTP được sử dụng trong yêu cầu không được hỗ trợ cho tài nguyên. Ví dụ, nếu yêu cầu sử dụng phương thức PUT cho một tài nguyên chỉ hỗ trợ phương thức GET và POST, server sẽ trả về lỗi 405.
++ 406 Not Acceptable: Mã lỗi này được trả về khi client yêu cầu một định dạng nội dung không được hỗ trợ bởi server. Ví dụ, client yêu cầu dữ liệu JSON nhưng server chỉ hỗ trợ XML, lỗi 406 sẽ được trả về.
++ 415 Unsupported Media Type: Mã lỗi này được trả về khi server không hỗ trợ định dạng nội dung (media type) được gửi bởi client trong yêu cầu. Ví dụ, nếu client gửi dữ liệu dạng JSON nhưng server chỉ hỗ trợ XML, lỗi 415 sẽ được trả về.
++ 500 Internal Server Error: Mã lỗi này được trả về khi có lỗi xảy ra trên server khi xử lý yêu cầu. Đây là một lỗi phía server và yêu cầu sửa chữa từ phía quản trị viên hệ thống.
++ 503 Service Unavailable: Mã lỗi này được trả về khi server tạm thời không thể xử lý yêu cầu do tài nguyên không khả dụng hoặc quá tải. Client có thể thử lại yêu cầu sau một khoảng thời gian.
+
+3. API sau là đúng hay sai, tại sao
+- GET /document/{id}: Đúng, api này cho phép lấy dữ liệu document theo id
+- POST /devices: Đúng, api cho phép thêm mới thiết bị
+- PUT /departments/employees/{employeeId}: Sai. Sửa lại: PUT /employees/{employeeId} hoặc PUT /departments/{departmentId}/employees/{employeeId}
+- DELETE /Workflows/{id}: Sai, api không nên viết hoa. Sửa lại: DELETE /workflows/{id} 
+- PATCH /managedevice/{id}: Sai, với danh từ dài thì nên dùng dấu gạch ngang. Sửa lại: PATCH /manage-device/{id}
+
+4. Cho hai thực thể Phòng ban và Nhân viên, thiết kế API thể hiện cho quản lý (CRUD) hai thực thể này. (Một phòng ban có nhiều nhân viên)
+- GET /departments: lấy ra danh sách các phòng ban
+- POST /departments: tạo thêm 1 phòng ban
+- GET /departments/{id}: lấy ra thông tin 1 phòng ban theo id
+- DELETE /departments/{id}: xóa phòng ban theo id
+- PUT /departments/{id}: cập nhật thông tin phòng ban dựa theo id phòng ban
+- GET /employees: lấy ra danh sách tất cả các nhân viên trong công ty
+- POST /employees: thêm mới nhân viên
+- GET /employees/{id}: lấy thông tin chi tiết của nhân viên theo id
+- PUT /employees/{id}: cập nhật thông tin nhân viên dựa theo id nhân viên
+- DELETE /employees/{id}: xóa nhân viên theo id
